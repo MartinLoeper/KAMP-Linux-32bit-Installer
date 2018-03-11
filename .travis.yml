@@ -1,2 +1,10 @@
 language: generic
 script: tar -zcvf eclipse-inst-linux32.tar.gz eclipse-inst-linux32
+deploy:
+  provider: releases
+  api_key:
+    secure: aQPbL34/nd7PLwV33rccqdaZCHL+Rj/M0LZn/VPRY3uzuZl2FX9Sw58u9UhQaWQbkprc6gxMdPAzyz+jq/G2PhDS951vl33KhUkfPdCAII/GfdYTaoJM/CwEXf/Pye9JLDwStoOQvYb0LVXPuAGlh8lYQx3cWRsSkrZWuexOq2hA/H0xj7hEVckY54Z6JpfMbamlNq4Uo86+rjdXw7+I64o87BFvRotNOPU6sKhqBQsoYaSK9toPdmA5nWNwkykUd706Y47vlXYjwr5OcJTYtvpXXpkDN3ujKxfkC+mB2bLsEktOcPMpDUcFalBbMv1G3adn5vXyEzrMEpdyGDGNFUE3/IJkAu+Gwili3H/yffEA+RPp+cUxa/Jg9Z7OU5G7pezwsZ7fYiJhhmiqRi2qqqIkr/TugcLNpml+SeYzX/jZfBNgvayCABp3vPR9+WE2Uu9neLp6j0kYrWU2Yo1EK27yjEbjUu9F8VZS1GdIKpUDCFs0nhucc7dEMqLyKQi86S1phPzpjhZ9dOZevIDHgHK094SJKImhqfOPahYxmPJX1o4eDAlnIrbF2BBfyzEC5fDIZgx8ViTYYyvaOgpOqjc91e0+zuVG0JlwGtpRMgXfDpumDh6sA8XwMbpRy/SnqzUL3eDWIiL6ruA23lsy/eHTcvNOYy+g9JrONCg9J9E=
+  file: eclipse-inst-linux32.tar.gz
+  skip_cleanup: true
+  on:
+    repo: MartinLoeper/KAMP-Linux-32bit-Installer
