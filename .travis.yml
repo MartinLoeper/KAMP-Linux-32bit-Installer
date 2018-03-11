@@ -1,0 +1,2 @@
+language: generic
+script: tar -zcvf eclipse-inst-linux32.tar.gz eclipse-inst-linux32
